@@ -1,0 +1,157 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-blue-1: #0041c1;
+    --bg-blue-2: #00c7e8;
+    --bg-gray: #eee;
+    --bg-dark: #000000;
+    --bg-light: #fff;
+    --margin-top: 6rem;
+    --transition: .5s;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-blue-1);
+    font-weight: 900;
+}
+
+.logo-image {
+    width: 25%;
+    height: 25%;
+}
+
+.my-mt {
+    margin-top: var(--margin-top);
+}
+
+.btn-lightblue {
+    background-color: var(--bg-blue-2);
+    color: var(--bg-light);
+}
+
+.btn-lightblue:hover {
+    background-color: transparent;
+    color: var(--bg-blue-2);
+    transition: var(--transition);
+    border-color: var(--bg-blue-2);
+}
+
+.btn-blue {
+    background-color: var(--bg-blue-1);
+    color: var(--bg-light);
+}
+
+.btn-blue:hover {
+    background-color: transparent;
+    color: var(--bg-blue-1);
+    transition: var(--transition);
+    border-color: var(--bg-blue-1);
+}
+
+.nav-item a {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.my-title {
+    color: var(--bg-blue-1);
+    font-weight: 800;
+}
+
+.sobre {
+    min-height: 75vh;
+}
+
+.bg-gray {
+    background-color: var(--bg-gray);
+}
+
+.icon {
+    font-size: 4rem;
+    color: var(--bg-blue-1);
+    margin: 2.5rem 0;
+    transition: var(--transition);
+}
+
+.card {
+    transition: var(--transition);
+}
+
+.card-footer {
+    background-color: transparent;
+    border: none;
+}
+
+.card:hover {
+    background-color: var(--bg-gray);
+}
+
+.card:hover .icon {
+    transform: scale(1.5);
+}
+
+.icon-social{
+    font-size: 2.5rem;
+    color: var(--bg-blue-1);
+    transition: var(--transition);
+}
+
+.logo-footer {
+    padding-left: 3rem;
+    margin-right: 1rem;
+}
+
+.license {
+    padding-right: 3rem; 
+}
+
+.reference {
+    padding-right: 3rem;
+}
+
+@media(max-width:500px) {
+    #footer {
+        justify-content: space-between;
+    }
+
+    #footer .logo-footer,.reference,.license {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+@media(max-width:991px) {
+    #sobre{
+        text-align: center;
+    }
+
+    #download .card {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        }
+        
+    #cadastro .btn {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1200px) {
+    #funcionalidade .btn {
+        font-size: 1rem;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1400px) {
+    #nossojeito .card {
+        min-height: 422px;
+    }
+}
